@@ -1,0 +1,133 @@
+﻿<Page
+    x:Class="CA2_TVSP.FilmPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CA2_TVSP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#242424" Width="334" Height="627" MaxWidth="334" MaxHeight="627" MinHeight="627">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Tapped="Return_Tapped"
+                    Source="Images/return.png" Height="25" Width="25" 
+                    HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <ScrollViewer Grid.Row="1" 
+                      Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <StackPanel>
+
+                <Image x:Name="showWallpaper"
+                    VerticalAlignment="Top"
+                    Grid.Row="1" Grid.ColumnSpan="2"/>
+
+                <TextBlock x:Name="showTitle" 
+                    FontSize="30"
+                    VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+
+
+                <TextBlock x:Name="showSynopsis" 
+                    FontSize="11" TextAlignment="Justify"
+                    Margin="20"
+                    VerticalAlignment="Top" HorizontalAlignment="Center"
+                    TextWrapping="Wrap"/>
+
+                <!--GENRE-->
+                <StackPanel Orientation="Horizontal" Margin="20 10 0 0">
+                    <TextBlock
+                        FontSize="12" TextAlignment="Justify"
+                        VerticalAlignment="Top" HorizontalAlignment="Left">
+                        <Underline>Genre</Underline>:
+                    </TextBlock>
+                    <TextBlock x:Name="showGenre"
+                        FontSize="12" TextAlignment="Justify"
+                        Margin="5 0 0 0"
+                        VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                </StackPanel>
+
+                <!--RELEASE DATE-->
+                <StackPanel Orientation="Horizontal" Margin="20 10 0 0">
+                    <TextBlock
+                        FontSize="12" TextAlignment="Justify"
+                        VerticalAlignment="Top" HorizontalAlignment="Left">
+                        <Underline>Release Date</Underline>:
+                    </TextBlock>
+                    <TextBlock x:Name="showReleaseDate"
+                        FontSize="12" TextAlignment="Justify"
+                        Margin="5 0 0 0"
+                        VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                </StackPanel>
+
+                <!--SCREENING CHANNEL-->
+                <StackPanel Orientation="Horizontal" Margin="20 10 0 0">
+                    <TextBlock
+                        FontSize="12" TextAlignment="Justify"
+                        VerticalAlignment="Top" HorizontalAlignment="Left">
+                        <Underline>Screening Channel</Underline>:
+                    </TextBlock>
+                    <TextBlock x:Name="showChannel"
+                        FontSize="12" TextAlignment="Justify"
+                        Margin="5 0 0 0"
+                        VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                </StackPanel>
+
+                <!--SCREENING TIME-->
+                <StackPanel Orientation="Horizontal" Margin="20 10 0 0">
+                    <TextBlock
+                        FontSize="12" TextAlignment="Justify"
+                        VerticalAlignment="Top" HorizontalAlignment="Left">
+                        <Underline>Screening Time</Underline>:
+                    </TextBlock>
+                    <TextBlock x:Name="showScreeningTime"
+                        FontSize="12" TextAlignment="Justify"
+                        Margin="5 0 0 0"
+                        VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                </StackPanel>
+
+                <!--CASTING-->
+                <TextBlock Text="Casting"
+                    FontSize="12"
+                    Margin="20 20 0 0"
+                    VerticalAlignment="Top" HorizontalAlignment="Left" TextDecorations="Underline"/>
+
+                <ScrollViewer Margin="20 10 0 20"
+                              ScrollViewer.HorizontalScrollBarVisibility="Auto" 
+                              ScrollViewer.VerticalScrollBarVisibility="Visible">
+                    <StackPanel x:Name="mustWatchSection" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                </ScrollViewer>
+
+                <StackPanel Orientation="Vertical" Margin="20 10 0 20">
+                    <TextBlock
+                        Margin="0 0 0 5"
+                        FontSize="12" TextAlignment="Justify"
+                        VerticalAlignment="Top" HorizontalAlignment="Left">
+                        <Underline>Prod. personnel</Underline>:
+                    </TextBlock>
+                    <TextBlock x:Name="showProd"
+                        FontSize="12"
+                        Margin="5 0 0 0"
+                        VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                </StackPanel>
+
+
+            </StackPanel>
+        </ScrollViewer>
+
+
+
+
+    </Grid>
+</Page>

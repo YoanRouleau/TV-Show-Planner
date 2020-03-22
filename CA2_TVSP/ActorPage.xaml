@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="CA2_TVSP.ActorPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CA2_TVSP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#242424" Width="334" Height="627" MaxWidth="334" MaxHeight="627" MinHeight="627">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Tapped="Return2_Tapped" Canvas.ZIndex="4"
+                    Source="Images/return.png" Height="25" Width="25" 
+                    HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+
+        <Rectangle Grid.Row="0" Grid.RowSpan="2" Grid.ColumnSpan="2" Canvas.ZIndex="1" Stretch="Fill">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                    <GradientStop Offset="0"/>
+                    <GradientStop Color="#242424" Offset="0.85" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+
+        <Image x:Name="profilePicture"
+            Grid.Row="0" Grid.RowSpan="2" Grid.ColumnSpan="2" 
+            Stretch="UniformToFill" VerticalAlignment="Center"/>
+
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Canvas.ZIndex="10">
+            <TextBlock x:Name="actorName" Margin="20 -30 20 0"
+                Foreground="White" TextWrapping="Wrap"
+                TextAlignment="Left" FontSize="26"/>
+            <TextBlock x:Name="dateOfBirth" Margin="20 5 20 0"
+                Foreground="White" TextWrapping="Wrap"
+                TextAlignment="Left" FontSize="12"/>
+            
+            <TextBlock x:Name="role" Margin="20 20 20 0"
+                Foreground="White" TextWrapping="Wrap"
+                TextAlignment="Left" FontSize="12"/>
+            
+            <TextBlock x:Name="biography" Margin="20 20 20 0"
+                Foreground="White" TextWrapping="Wrap"
+                TextAlignment="Left" FontSize="11"/>
+            
+            <Button x:Name="IMDB_button" Margin="0 30 0 0"
+                HorizontalAlignment="Center" 
+                Content="Access IMDB Page"
+                Click="IMDB_button_Click"/>
+            
+        </StackPanel>
+
+
+
+    </Grid>
+
+</Page>
