@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CA2_TVSP.Classes.Actor">
+    <Position X="5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQBAAAEAAQAAQAAAIAA=</HashCode>
+      <FileName>Classes\Actor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CA2_TVSP.Classes.ActorParams">
+    <Position X="16" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAEAAAAAAACAAAAEEAAAAAAAAAAEg=</HashCode>
+      <FileName>Classes\ActorParams.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CA2_TVSP.Classes.CastList">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\CastList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CA2_TVSP.Classes.Channel">
+    <Position X="13.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Channel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CA2_TVSP.Classes.Member">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAEAAAABAAAAAEAAAABAAAAAQAAAAAAAACAAAAAg=</HashCode>
+      <FileName>Classes\Member.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CA2_TVSP.Classes.ProdList">
+    <Position X="11.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACAAA=</HashCode>
+      <FileName>Classes\ProdList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CA2_TVSP.Classes.Show">
+    <Position X="10" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAIAAAgSAAAIEAAAgoAAAAKAwAAAAMAAgAAAAAACAA=</HashCode>
+      <FileName>Classes\Show.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CA2_TVSP.Classes.ShowParams">
+    <Position X="16" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAgAAAAIEAAAgIAAAAIAgAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Classes\ShowParams.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CA2_TVSP.Classes.Staff">
+    <Position X="7.25" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Staff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
